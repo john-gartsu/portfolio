@@ -1,16 +1,26 @@
 {% extends "base.html" %}
-
-
+{% load static from static %}
 {% block content %}
-    {% block headshot %}
-        <img id="profile-pic" src="{% static 'images/headshot.jpeg' %}" alt="headshot">
-        <hr>
-        {{ block.super }}
-    <h1>About John Gartsu</h1>
-        <ul class="social-links">
-            <li><img class="social" src="{% static 'images/linkedin.png' %}"></li>
-            <li><img class="social" src="{% static 'images/GitHub-Mark-32px.png' %}"></li>
-        </ul>
-    <hr>
-    
+   
+<h1>About Me!</h1>
+<!-- image of face -->
+<div class="card card-body h-100  border-info" id="profile-wrapper">
+    <img id="profile-pic" src="{% static '/images/headshot.jpeg' %}" >
+<div>
+<hr>
+<p>Backend software developer with over 2 years of experience in the technology industry looking for opportunities to grow and learn. The following is my tech-per-tise: Python, Django, Flask, FastAPI, SQL, and AWS</p>
+
+<p>Looking to work for companies that help improve social justice, the protecting the environment against climate change, and promote diversity.</p>
+
+<p>I am an openly queer man looking to grow in building applications that help promote change.</p>
+<hr>
+
+<!-- goals  -->
+<h1>My Goals</h1>
+<!-- short term -->
+<!-- long term -->
+
+<!-- hobbies -->
+
+
 {% endblock %}
